@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function divide(a, b) {
+            if (b === 0) {
+                alert("Cannot divide by zero");
+                return null;
+            }
+            return a / b;
+        }
+
+        function calc() {
+            const num1 = Number(document.getElementById('input1').value);
+            const num2 = Number(document.getElementById('input2').value);
+            document.write("Sum: " + add(num1, num2) + "<br>");
+            document.write("Difference: " + subtract(num1, num2) + "<br>");
+            document.write("Product: " + multiply(num1, num2) + "<br>");
+            document.write("Quotient: " + divide(num1, num2) + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="input1" />
+    <input type="number" id="input2" />
+    <button onclick= calc() style="background-color: rgb(255, 0, 0);">Calc</button>
+    
+
+</body>
+</html>

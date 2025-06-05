@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prompt Calculator</title>
+    <script>
+        function calculate() {
+            let a = Number(prompt("Enter first number:"));
+            let b = Number(prompt("Enter second number:"));
+
+            let add = a + b;
+            let sub = a - b;
+            let mul = a * b;
+            let div = b !== 0 ? a / b : "Cannot divide by zero";
+
+            alert(
+                "Addition: " + add + "\n" +
+                "Subtraction: " + sub + "\n" +
+                "Multiplication: " + mul + "\n" +
+                "Division: " + div
+            );
+        }
+    </script>
+</head>
+<body>
+    <button onclick="calculate()">Start Calculation</button>
+</body>
+</html>
+
+</body>
+</html>

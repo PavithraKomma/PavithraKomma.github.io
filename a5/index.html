@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function submit(){
+            const name = document.getElementById("name").value;
+            const mail = document.getElementById("mail").value;
+            const password = document.getElementById("password").value;
+
+            document.getElementById("result").innerHTML =
+                "Name: " + name + "<br>" +
+                "Email: " + mail + "<br>" +
+                "Password: " + password;
+        }
+    </script>
+
+</head>
+<body>
+    <input type="name" id="name" placeholder="enter name">
+    <input type="email" id="mail" placeholder="enter maidId">
+    <input type="password" id="password" placeholder="enter password">
+    <button onclick= submit() style="background-color: rgb(176, 96, 17);">submit</button>
+    <div id="result"></div>
+
+</body>
+</html>

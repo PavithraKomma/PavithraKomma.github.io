@@ -8,11 +8,17 @@
         function greet(){
             alert(name1.value+name2.value);
         }
+        function calc(){
+            let a=Number(t1.value);
+            let b=Number(t2.value);
+            dvResult.innerHTML=a+b;
+        }
     </script>
 </head>
 <body>
     <input type="text" id="name1" placeholder="name1">
     <input type="text" id="name2" placeholder="name2">
     <button onclick="greet()" style="background-color: brown;">click here</button>
+    
 </body>
 </html>
